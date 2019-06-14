@@ -11,15 +11,16 @@ Plug 'easymotion/vim-easymotion'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
     
-:set shiftwidth=5
+:set shiftwidth=2
 :set autoindent
-:set tabstop=4
+:set tabstop=2
 :set expandtab
 :set tags=tags
 :set autoread
@@ -33,6 +34,8 @@ let $FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 nnoremap ; :
 noremap m 7j
 noremap 8 7k
+noremap <Space> :bn
+inoremap jj <Esc>
 
 map <Leader> <Plug>(easymotion-prefix)
 
