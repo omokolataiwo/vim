@@ -1,0 +1,130 @@
+{
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.colorCustomizations": {
+        "terminal.background": "#090300",
+        "terminal.foreground": "#A5A2A2",
+        "terminalCursor.background": "#A5A2A2",
+        "terminalCursor.foreground": "#A5A2A2",
+        "terminal.ansiBlack": "#090300",
+        "terminal.ansiBlue": "#01A0E4",
+        "terminal.ansiBrightBlack": "#5C5855",
+        "terminal.ansiBrightBlue": "#01A0E4",
+        "terminal.ansiBrightCyan": "#B5E4F4",
+        "terminal.ansiBrightGreen": "#01A252",
+        "terminal.ansiBrightMagenta": "#A16A94",
+        "terminal.ansiBrightRed": "#DB2D20",
+        "terminal.ansiBrightWhite": "#F7F7F7",
+        "terminal.ansiBrightYellow": "#FDED02",
+        "terminal.ansiCyan": "#B5E4F4",
+        "terminal.ansiGreen": "#01A252",
+        "terminal.ansiMagenta": "#A16A94",
+        "terminal.ansiRed": "#DB2D20",
+        "terminal.ansiWhite": "#A5A2A2",
+        "terminal.ansiYellow": "#FDED02",
+        "activityBarBadge.background": "#00BCD4",
+        "list.activeSelectionForeground": "#00BCD4",
+        "list.inactiveSelectionForeground": "#00BCD4",
+        "list.highlightForeground": "#00BCD4",
+        "scrollbarSlider.activeBackground": "#00BCD450",
+        "editorSuggestWidget.highlightForeground": "#00BCD4",
+        "textLink.foreground": "#00BCD4",
+        "progressBar.background": "#00BCD4",
+        "pickerGroup.foreground": "#00BCD4",
+        "tab.activeBorder": "#00BCD4",
+        "notificationLink.foreground": "#00BCD4"
+    },
+    "window.zoomLevel": 1,
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "editor.fontSize": 18,
+    "prettier.singleQuote": true,
+    "editor.tabSize": 2,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "explorer.confirmDelete": false,
+    "eslint.alwaysShowStatus": true,
+    "editor.minimap.enabled": false,
+    "prettier.stylelintIntegration": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.env.osx": {
+        "zsh": "zsh"
+    },
+    "editor.formatOnType": true,
+    "eslint.nodePath": "./node_modules/.bin/eslint",
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnPaste": true,
+    "prettier.eslintIntegration": true,
+    "prettier.printWidth": 100,
+    "editor.hover.delay": 10000,
+    "sync.gist": "afc42379e6707aafc1d02d3c101ed030",
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "workbench.editor.showTabs": true,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.leader": ",",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.foldfix": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "m"
+            ],
+            "after": [
+                "j",
+                "4"
+            ]
+        },
+        {
+            "before": [
+                "8"
+            ],
+            "after": [
+                "k",
+                "4"
+            ]
+        },
+    ],
+    "editor.lineNumbers": "on",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.editor.enablePreview": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.fontSize": 18,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+}
