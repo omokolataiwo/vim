@@ -1,6 +1,16 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
+    "key": ", k",
+    "command": "workbench.action.moveEditorRightInGroup",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", j",
+    "command": "workbench.action.moveEditorLeftInGroup",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
     "key": ", c",
     "command": "copyFilePath",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
@@ -46,6 +56,16 @@
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
+    "key": ", s",
+    "command": "workbench.action.splitEditorRight",
+    "when": "vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", g",
+    "command": "workbench.action.focusNextGroup",
+    "when": "vim.active && vim.mode == 'Normal'"
+  },
+  {
     "key": "cmd+enter",
     "command": "renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus"
@@ -59,11 +79,6 @@
     "key": "enter",
     "command": "list.select",
     "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "tab",
-    "command": "workbench.action.focusNextGroup",
-    "when": "inZenMode"
   },
   {
     "key": "[",
@@ -285,5 +300,18 @@
   {
     "key": "cmd+k z",
     "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut"
   }
 ]

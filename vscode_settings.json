@@ -37,14 +37,12 @@
     "window.zoomLevel": 1,
     "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
-    "editor.fontSize": 18,
     "prettier.singleQuote": true,
     "editor.tabSize": 2,
     "diffEditor.ignoreTrimWhitespace": true,
     "explorer.confirmDelete": false,
     "eslint.alwaysShowStatus": true,
     "editor.minimap.enabled": false,
-    "prettier.stylelintIntegration": true,
     "java.errors.incompleteClasspath.severity": "ignore",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -54,12 +52,8 @@
     },
     "editor.formatOnType": true,
     "eslint.nodePath": "./node_modules/.bin/eslint",
-    "eslint.autoFixOnSave": true,
     "editor.formatOnPaste": true,
-    "prettier.eslintIntegration": true,
-    "prettier.printWidth": 100,
     "editor.hover.delay": 10000,
-    "sync.gist": "afc42379e6707aafc1d02d3c101ed030",
     "explorer.confirmDragAndDrop": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -92,6 +86,8 @@
         }
     ],
     "vim.foldfix": true,
+    "vim.debug.silent": true,
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -117,14 +113,19 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "workbench.editor.enablePreview": false,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "terminal.integrated.fontSize": 18,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.rendererType": "dom",
+    "editor.fontSize": 18,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 }
