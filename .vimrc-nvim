@@ -21,7 +21,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ternjs/tern_for_vim'
 Plug 'zefei/vim-wintabs'
 Plug 'tell-k/vim-autopep8'
-Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -32,11 +31,11 @@ call plug#end()
 :set expandtab
 :set tags=tags
 :set autoread
-:set relativenumber
+:set splitbelow
 :set foldmethod=indent
+:set number
 " :set autochdir
 
-let g:UltiSnipsExpandTrigger="<tab>"
 let g:autopep8_disable_show_diff=1
 let g:autopep8_on_save = 1
 let g:wintabs_display='statusline'
@@ -60,11 +59,11 @@ noremap <Leader>t :NERDTreeToggle<CR>
 noremap <Leader>f :Files<CR>
 noremap <Leader>a :ALEFix<CR>
 noremap <Leader>x :WintabsOnly<CR>
-inoremap jj <Esc>
-inoremap 3 <C-O>za
+noremap 3 <C-O>za
 nnoremap 3 za
 onoremap 3 <C-C>za
 vnoremap 3 zf
+inoremap jj <Esc>
 
 map <Leader> <Plug>(easymotion-prefix)
 
