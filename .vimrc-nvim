@@ -32,7 +32,7 @@ call plug#end()
 :set tags=tags
 :set autoread
 :set splitbelow
-:set foldmethod=indent
+" :set foldmethod=indent
 :set number
 " :set autochdir
 
