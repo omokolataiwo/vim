@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# This hook will look for code comments marked '//no-commit'
+#    - case-insensitive
+#    - dash is optional
+#    - there may be a space after the //
+#
+noCommitCount=$(git diff --no-ext-diff --cached | egrep -i --count "//#fact")
+if [ "$noCommitCount" -ne "0" ]; then
+   echo "WARNING: You are attempting to commit changes which include a '#fact'."
+   echo "Please check the following pointers:"
+   tput setaf 9; git diff --no-ext-diff --cached -i -G"//#fact" | grep '^+//#fact' | grep -Ev '^(--- a/|\+\+\+ b/)' | sed 's/^+\/\// 👉 /'; tput sgr0
+   # git diff --no-ext-diff --cached -i -G"//#fact" | grep '^+//#fact' | grep -Ev '^(--- a/|\+\+\+ b/)' | sed 's/^+\/\//  /'
+   echo
+   echo "You can ignore this warning by running the commit command with '--no-verify'"
+   exit 1
+fi
