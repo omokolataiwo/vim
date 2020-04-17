@@ -110,6 +110,9 @@ export PATH="$PATH:/opt/apache-maven-3.6.0/bin"
 # Composer
 export PATH="$PATH:/Users/andeladeveloper/.composer/vendor/bin"
 
+#Git
+alias gs="gst"
+
 #Todo-txt
 alias t='todo.sh -d /Users/andeladeveloper/.todo/config'
 
