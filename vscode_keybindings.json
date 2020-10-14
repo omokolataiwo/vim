@@ -1,5 +1,14 @@
-// Place your key bindings in this file to overwrite the defaults
 [
+  {
+    "key": ", q",
+    "command": "rest-client.request",
+    "when": "editorTextFocus && editorLangId == 'http'"
+  },
+  {
+    "key": ", w",
+    "command": "code-runner.run",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
   {
     "key": ", k",
     "command": "workbench.action.moveEditorRightInGroup",
@@ -33,7 +42,7 @@
   {
     "key": ", d",
     "command": "workbench.action.closeActiveEditor",
-    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+    "when": "vim.active && vim.mode == 'Normal' || !editorTextFocus"
   },
   {
     "key": ", f",
@@ -43,11 +52,6 @@
   {
     "key": ", m",
     "command": "bookmarks.toggle",
-    "when": "vim.active && vim.mode == 'Normal'"
-  },
-  {
-    "key": "3",
-    "command": "bookmarks.jumpToNext",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
@@ -61,8 +65,8 @@
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": ", g",
-    "command": "workbench.action.focusNextGroup",
+    "key": "3",
+    "command": "bookmarks.jumpToNext",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
@@ -82,11 +86,16 @@
   },
   {
     "key": "[",
+    "command": "workbench.action.focusNextGroup",
+    "when": "vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "q",
     "command": "workbench.action.terminal.focus",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": "[",
+    "key": "q",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus && vim.active && vim.mode == 'Normal'"
   },
@@ -96,7 +105,7 @@
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": "space",
+    "key": "backspace",
     "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },

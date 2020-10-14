@@ -25,6 +25,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-dadbod'
 Plug 'baverman/vial'
 Plug 'baverman/vial-http'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -44,15 +46,23 @@ call plug#end()
 let g:autopep8_disable_show_diff=1
 let g:autopep8_on_save = 1
 let g:wintabs_display='statusline'
-let g:user_emmet_leader_key=','
+" let g:user_emmet_leader_key=','
 let g:SuperTabCrMapping = 1
-let mapleader = ","
 let g:ale_fixers = ['eslint','autopep8', 'yapf']
+
+" let mapleader = ","
 let $FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 
 :nnoremap <Leader>c :let @+=expand('%:p')<CR>
 nnoremap <leader>ov :exe ':silent !code %'<CR>:redraw!<CR>
-noremap m 7j
+nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fq :FlutterQuit<cr>
+nnoremap <leader>fr :FlutterHotReload<cr>
+nnoremap <leader>fR :FlutterHotRestart<cr>
+nnoremap <leader>fD :FlutterVisualDebug<cr>
+
+" noremap m 7j
+
 noremap ; :
 noremap q ;
 noremap 8 7k
@@ -62,7 +72,8 @@ noremap <Space> :WintabsPrevious<CR>
 noremap <Leader>d :WintabsClose<CR> 
 noremap <Leader>t :NERDTreeToggle<CR>
 noremap <Leader>f :Files<CR>
-noremap <Leader>a :ALEFix<CR>
+" noremap <Leader>a :ALEFix<CR>
+" noremap <Leader>r :exe "!tmux send -t 0 'ls' Enter"<cr><c-l>
 noremap <Leader>x :WintabsOnly<CR>
 noremap 3 <C-O>za
 nnoremap 3 za

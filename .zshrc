@@ -97,12 +97,15 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias c="clear"
 
 # Readline vim mode
 bindkey -v
 
 # Flutter SDK
 export PATH="$PATH:/Users/andeladeveloper/bin/flutter/bin"
+export PATH="$PATH:/Users/andeladeveloper/bin/gh/bin"
+export PATH="$PATH:/Users/andeladeveloper/bin/lnav/lnav"
 
 # Mvn
 export PATH="$PATH:/opt/apache-maven-3.6.0/bin"
@@ -146,3 +149,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/php/bin:$PATH"
+export PATH="/usr/local/bin/vim:$PATH"
+export PATH="$PATH:/Users/andeladeveloper/bin/"
+
+function hs() {
+    ( cd ~/Homestead && vagrant $* )
+}

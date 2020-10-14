@@ -1,6 +1,6 @@
 {
     "material-icon-theme.folders.theme": "specific",
-    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.colorTheme": "Solarized Light",
     "workbench.colorCustomizations": {
         "terminal.background": "#090300",
         "terminal.foreground": "#A5A2A2",
@@ -35,7 +35,8 @@
         "notificationLink.foreground": "#00BCD4"
     },
     "window.zoomLevel": 1,
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
+    "editor.cursorBlinking": "smooth",
     "editor.wordWrap": "on",
     "prettier.singleQuote": true,
     "editor.tabSize": 2,
@@ -77,6 +78,42 @@
     "vim.insertModeKeyBindings": [
         {
             "before": [
+                "k",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "l",
+                "k"
+            ],
+            "afrer": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "k",
+                "l"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
                 "j",
                 "j"
             ],
@@ -91,11 +128,20 @@
     "vim.normalModeKeyBindings": [
         {
             "before": [
+                "z",
+                "z",
+            ],
+            "after": [
+                "?",
+            ]
+        },
+        {
+            "before": [
                 "m"
             ],
             "after": [
                 "j",
-                "4"
+                "9"
             ]
         },
         {
@@ -104,7 +150,7 @@
             ],
             "after": [
                 "k",
-                "4"
+                "9"
             ]
         },
     ],
@@ -121,11 +167,28 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "terminal.integrated.rendererType": "dom",
-    "editor.fontSize": 18,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "rest-client.previewResponseInUntitledDocument": true,
+    "theme-timer.themes": [
+        {
+            "theme": "Solarized Light",
+            "startTime": "7:00:00",
+            "endTime": "16:00:00"
+        },
+        {
+            "theme": "Visual Studio Dark",
+            "startTime": "16:00:00",
+            "endTime": "7:00:00"
+        }
+    ],
 }
