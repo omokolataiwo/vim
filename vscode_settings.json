@@ -35,12 +35,12 @@
         "notificationLink.foreground": "#00BCD4"
     },
     "window.zoomLevel": 1,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "onFocusChange",
     "editor.cursorBlinking": "smooth",
     "editor.wordWrap": "on",
     "prettier.singleQuote": true,
     "editor.tabSize": 2,
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "explorer.confirmDelete": false,
     "eslint.alwaysShowStatus": true,
     "editor.minimap.enabled": false,
@@ -128,33 +128,48 @@
     "vim.normalModeKeyBindings": [
         {
             "before": [
-                "z",
-                "z",
+                "m",
             ],
             "after": [
-                "?",
+                "<C-d>",
             ]
         },
         {
             "before": [
-                "m"
+                "q",
             ],
             "after": [
-                "j",
-                "9"
+                "<C-u>",
             ]
         },
         {
             "before": [
-                "8"
+                ";",
             ],
             "after": [
-                "k",
-                "9"
+                "w",
+            ]
+        },
+        {
+            "before": [
+                "h",
+            ],
+            "after": [
+                "b",
+            ]
+        },
+        {
+            "before": [
+                "R",
+            ],
+            "after": [
+                "\"",
+                "0",
+                "P"
             ]
         },
     ],
-    "editor.lineNumbers": "on",
+    "editor.lineNumbers": "relative",
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -191,4 +206,17 @@
             "endTime": "7:00:00"
         }
     ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "gitlens.views.search.files.layout": "tree",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.languageServer": "Microsoft",
+    "code-runner.defaultLanguage": "javascript",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "debug.javascript.autoAttachFilter": "disabled",
+    "bookmarks.navigateThroughAllFiles": false,
+    "bookmarks.sideBar.expanded": true,
+    "liveshare.featureSet": "insiders"
 }

@@ -1,4 +1,30 @@
+// Place your key bindings in this file to overwrite the defaults
 [
+  {
+    "key": "tab",
+    "command": "search.action.focusNextSearchResult",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": ", q",
+    "command": "search.action.openNewEditor",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", q",
+    "command": "search.action.openNewEditor",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "enter",
+    "command": "workbench.action.toggleEditorWidths",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", z",
+    "command": "workbench.explorer.fileView.focus",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
   {
     "key": ", q",
     "command": "rest-client.request",
@@ -22,6 +48,11 @@
   {
     "key": ", c",
     "command": "copyFilePath",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", v",
+    "command": "copy-relative-path-and-line-numbers.both",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
@@ -90,12 +121,12 @@
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": "q",
+    "key": "\\",
     "command": "workbench.action.terminal.focus",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": "q",
+    "key": "\\",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus && vim.active && vim.mode == 'Normal'"
   },
@@ -322,5 +353,10 @@
   {
     "key": "ctrl+-",
     "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "f4",
+    "command": "-search.action.focusNextSearchResult",
+    "when": "hasSearchResult || inSearchEditor"
   }
 ]

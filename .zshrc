@@ -121,7 +121,7 @@ alias t='todo.sh -d /Users/andeladeveloper/.todo/config'
 
 #Bookmark
 alias g="jump"
-alias s="bookmark"
+alias sb="bookmark"
 alias d="deletemark"
 alias p="showmarks"
 
@@ -135,10 +135,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Custom Alias
-alias seek="rg '' | fzf"
-alias f="cd **"
 
 # React Native Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -155,3 +151,9 @@ export PATH="$PATH:/Users/andeladeveloper/bin/"
 function hs() {
     ( cd ~/Homestead && vagrant $* )
 }
+
+# Custom Alias
+function ss() {
+  (rg $* -l | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')
+}
+alias f="cd **"
