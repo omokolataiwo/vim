@@ -1,14 +1,13 @@
-// Place your key bindings in this file to overwrite the defaults
 [
+  {
+    "key": "space",
+    "command": "npm.focus",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
+  },
   {
     "key": "tab",
     "command": "search.action.focusNextSearchResult",
     "when": "inSearchEditor"
-  },
-  {
-    "key": ", q",
-    "command": "search.action.openNewEditor",
-    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
     "key": ", q",
@@ -21,9 +20,14 @@
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": ", z",
+    "key": ", t",
     "command": "workbench.explorer.fileView.focus",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", t",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletVisible && filesExplorerFocus"
   },
   {
     "key": ", q",
@@ -62,17 +66,27 @@
   },
   {
     "key": ", x",
-    "command": "workbench.action.closeOtherEditors",
+    "command": "workbench.action.closeAllEditors",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": ", p",
+    "command": "workbench.action.pinEditor",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
     "key": ", a",
-    "command": "editor.action.formatDocument",
+    "command": "editor.action.formatChanges",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
     "key": ", d",
     "command": "workbench.action.closeActiveEditor",
+    "when": "vim.active && vim.mode == 'Normal' || !editorTextFocus"
+  },
+  {
+    "key": ", d",
+    "command": "workbench.action.closeActivePinnedEditor",
     "when": "vim.active && vim.mode == 'Normal' || !editorTextFocus"
   },
   {
@@ -86,7 +100,7 @@
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": ", t",
+    "key": ", z",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "vim.active && vim.mode == 'Normal'"
   },
@@ -129,6 +143,11 @@
     "key": "\\",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "\\",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "listFocus && vim.active && vim.mode == 'Normal'"
   },
   {
     "key": "tab",
