@@ -1,10 +1,5 @@
 [
   {
-    "key": "space",
-    "command": "npm.focus",
-    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
-  },
-  {
     "key": "tab",
     "command": "search.action.focusNextSearchResult",
     "when": "inSearchEditor"
@@ -15,8 +10,14 @@
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
+    "key": ", r",
+    "command": "editor.action.referenceSearch.trigger",
+    // "command": "references-view.findReferences",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
     "key": "enter",
-    "command": "workbench.action.toggleEditorWidths",
+    "command": "workbench.action.files.save",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
@@ -66,7 +67,7 @@
   },
   {
     "key": ", x",
-    "command": "workbench.action.closeAllEditors",
+    "command": "workbench.action.closeEditorsToTheRight",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
@@ -96,12 +97,22 @@
   },
   {
     "key": ", m",
-    "command": "bookmarks.toggle",
+    "command": "bookmarks.toggleLabeled",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
     "key": ", z",
     "command": "workbench.action.toggleSidebarVisibility",
+    "when": "vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "8",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": ", .",
+    "command": "workbench.action.splitEditorDown",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
@@ -111,7 +122,7 @@
   },
   {
     "key": "3",
-    "command": "bookmarks.jumpToNext",
+    "command": "bookmarks.listFromAllFiles",
     "when": "vim.active && vim.mode == 'Normal'"
   },
   {
@@ -377,5 +388,9 @@
     "key": "f4",
     "command": "-search.action.focusNextSearchResult",
     "when": "hasSearchResult || inSearchEditor"
+  },
+  {
+    "key": "alt+q",
+    "command": "editor.debug.action.selectionToRepl"
   }
 ]
