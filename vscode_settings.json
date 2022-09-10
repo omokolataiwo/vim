@@ -1,238 +1,312 @@
 {
-  "material-icon-theme.folders.theme": "specific",
-  "workbench.colorTheme": "Visual Studio Dark",
-  "workbench.colorCustomizations": {
-      "terminal.background": "#090300",
-      "terminal.foreground": "#A5A2A2",
-      "terminalCursor.background": "#A5A2A2",
-      "terminalCursor.foreground": "#A5A2A2",
-      "terminal.ansiBlack": "#090300",
-      "terminal.ansiBlue": "#01A0E4",
-      "terminal.ansiBrightBlack": "#5C5855",
-      "terminal.ansiBrightBlue": "#01A0E4",
-      "terminal.ansiBrightCyan": "#B5E4F4",
-      "terminal.ansiBrightGreen": "#01A252",
-      "terminal.ansiBrightMagenta": "#A16A94",
-      "terminal.ansiBrightRed": "#DB2D20",
-      "terminal.ansiBrightWhite": "#F7F7F7",
-      "terminal.ansiBrightYellow": "#FDED02",
-      "terminal.ansiCyan": "#B5E4F4",
-      "terminal.ansiGreen": "#01A252",
-      "terminal.ansiMagenta": "#A16A94",
-      "terminal.ansiRed": "#DB2D20",
-      "terminal.ansiWhite": "#A5A2A2",
-      "terminal.ansiYellow": "#FDED02",
-      "activityBarBadge.background": "#00BCD4",
-      "list.activeSelectionForeground": "#00BCD4",
-      "list.inactiveSelectionForeground": "#00BCD4",
-      "list.highlightForeground": "#00BCD4",
-      "scrollbarSlider.activeBackground": "#00BCD450",
-      "editorSuggestWidget.highlightForeground": "#00BCD4",
-      "textLink.foreground": "#00BCD4",
-      "progressBar.background": "#00BCD4",
-      "pickerGroup.foreground": "#00BCD4",
-      "tab.activeBorder": "#00BCD4",
-      "notificationLink.foreground": "#00BCD4"
-  },
-"window.zoomLevel": 1,
-  "editor.cursorBlinking": "smooth",
-  "editor.wordWrap": "on",
-  "prettier.singleQuote": true,
-  "editor.tabSize": 2,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "explorer.confirmDelete": false,
-  "eslint.alwaysShowStatus": true,
-  "editor.minimap.enabled": false,
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.accessibilitySupport": "off",
-  "terminal.integrated.env.osx": {
-      "zsh": "zsh"
-  },
-  "editor.formatOnType": true,
-  "eslint.nodePath": "./node_modules/.bin/eslint",
-  "editor.formatOnPaste": true,
-  "editor.hover.delay": 10000,
-  "explorer.confirmDragAndDrop": false,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.exclude": {
-      "**/.classpath": true,
-      "**/.project": true,
-      "**/.settings": true,
-      "**/.factorypath": true
-  },
-  "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "workbench.editor.showTabs": true,
-  "vim.easymotion": true,
-  "vim.surround": true,
-  "vim.leader": ",",
-  "vim.insertModeKeyBindings": [
-      {
-          "before": [
-              "k",
-              "j"
-          ],
-          "after": [
-              "<Esc>"
-          ]
-      },
-      {
-          "before": [
-              "j",
-              "k"
-          ],
-          "after": [
-              "<Esc>"
-          ]
-      },
-      {
-          "before": [
-              "l",
-              "k"
-          ],
-          "afrer": [
-              "<Esc>"
-          ]
-      },
-      {
-          "before": [
-              "k",
-              "l"
-          ],
-          "after": [
-              "<Esc>"
-          ]
-      },
-      {
-          "before": [
-              "j",
-              "j"
-          ],
-          "after": [
-              "<Esc>"
-          ]
-      },
-      {
-          "before": [
-              "k",
-              "k"
-          ],
-          "after": [
-              "<Esc>"
-          ]
-      }
-  ],
-  "vim.foldfix": true,
-  "vim.debug.silent": true,
-  "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindings": [
-      {
-          "before": [
-              ";",
-          ],
-          "after": [
-              "o",
-              "<Esc>"
-          ]
-      },
-      {
-          "before": [
-              "f",
-          ],
-          "commands": [
-              "metaGo.gotoSmartActive",
-          ]
-      },
-      {
-          "before": [
-              "m",
-          ],
-          "after": [
-              "<C-d>",
-          ]
-      },
-      {
-          "before": [
-              "q",
-          ],
-          "after": [
-              "<C-u>",
-          ]
-      },
-      {
-          "before": [
-              "R",
-          ],
-          "after": [
-              "\"",
-              "0",
-              "P"
-          ]
-      },
-  ],
-  "editor.lineNumbers": "relative",
-  "[jsonc]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "workbench.editor.enablePreview": false,
-  "[typescript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "terminal.integrated.fontSize": 18,
-  "[json]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "terminal.integrated.rendererType": "dom",
-  "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-  },
-  "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications",
-  "[vue]": {
-      "editor.defaultFormatter": "octref.vetur"
-  },
-  "rest-client.previewResponseInUntitledDocument": true,
-  "theme-timer.themes": [
-      {
-          "theme": "Visual Studio Light",
-          "startTime": "7:00:00",
-          "endTime": "16:00:00"
-      },
-      {
-          "theme": "Visual Studio Dark",
-          "startTime": "16:00:00",
-          "endTime": "7:00:00"
-      }
-  ],
-  "[typescriptreact]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "gitlens.views.search.files.layout": "tree",
-  "python.pythonPath": "/usr/local/bin/python3",
-  "python.languageServer": "Microsoft",
-  "code-runner.defaultLanguage": "javascript",
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "debug.javascript.autoAttachFilter": "disabled",
-  "bookmarks.navigateThroughAllFiles": false,
-  "bookmarks.sideBar.expanded": true,
-"liveshare.featureSet": "insiders",
-"npm.enableRunFromFolder": true,
-"npm.scriptExplorerAction": "run",
-"npm.runSilent": true,
-"emmet.showExpandedAbbreviation": "never",
-"files.autoSave": "afterDelay",
-"tabnine.experimentalAutoImports": true,
-"mdb.confirmRunAll": false
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.colorTheme": "Red",
+    "workbench.colorCustomizations": {
+        "editor.background": "#172B23",
+        "editorCursor.foreground": "#FDED02",
+        "terminal.background": "#090300",
+        "terminal.foreground": "#A5A2A2",
+        "terminalCursor.background": "#A5A2A2",
+        "terminalCursor.foreground": "#A5A2A2",
+        "terminal.ansiBlack": "#090300",
+        "terminal.ansiBlue": "#01A0E4",
+        "terminal.ansiBrightBlack": "#5C5855",
+        "terminal.ansiBrightBlue": "#01A0E4",
+        "terminal.ansiBrightCyan": "#B5E4F4",
+        "terminal.ansiBrightGreen": "#01A252",
+        "terminal.ansiBrightMagenta": "#A16A94",
+        "terminal.ansiBrightRed": "#DB2D20",
+        "terminal.ansiBrightWhite": "#F7F7F7",
+        "terminal.ansiBrightYellow": "#FDED02",
+        "terminal.ansiCyan": "#B5E4F4",
+        "terminal.ansiGreen": "#01A252",
+        "terminal.ansiMagenta": "#A16A94",
+        "terminal.ansiRed": "#DB2D20",
+        "terminal.ansiWhite": "#A5A2A2",
+        "terminal.ansiYellow": "#FDED02",
+        "activityBarBadge.background": "#00BCD4",
+        "list.activeSelectionForeground": "#00BCD4",
+        "list.inactiveSelectionForeground": "#00BCD4",
+        "list.highlightForeground": "#00BCD4",
+        "scrollbarSlider.activeBackground": "#00BCD450",
+        "editorSuggestWidget.highlightForeground": "#00BCD4",
+        "textLink.foreground": "#00BCD4",
+        "progressBar.background": "#00BCD4",
+        "pickerGroup.foreground": "#00BCD4",
+        "tab.activeBorder": "#00BCD4",
+        "notificationLink.foreground": "#00BCD4"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    // "comment",
+                    // "string.template",
+                    // "variable",
+                    // "entity.name.type.class", //class names
+                    // "keyword", //import, export, return…
+                    // "storage.modifier", //static keyword
+                    // "storage.type", //class keyword
+                    // "support.class.builtin",
+                    // "keyword.control",
+                    // "constant.language",
+                    // "entity.other.attribute-name",
+                    // "string.quoted.single",
+                    // "entity.name.method",
+                    // "entity.name.tag"
+                ], // array of Scopes to which the style should be applied to
+                "settings": {
+                    // "fontStyle": "italic", // the font style that should be applied
+                }
+            }
+        ]
+    },
+    // "editor.fontLigatures": true,
+    // "editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace",
+    "window.zoomLevel": 1,
+    "editor.cursorBlinking": "smooth",
+    "editor.wordWrap": "on",
+    "prettier.singleQuote": true,
+    "editor.tabSize": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,
+    "eslint.alwaysShowStatus": true,
+    "editor.minimap.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.env.osx": {
+        "zsh": "zsh"
+    },
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.hover.delay": 10000,
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "workbench.editor.showTabs": true,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.leader": ",",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "k",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "l",
+                "k"
+            ],
+            "afrer": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "k",
+                "l"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "k",
+                "k"
+            ],
+            "after": [
+                "<Esc>",
+            ]
+        }
+    ],
+    "vim.foldfix": true,
+    "vim.debug.silent": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                ";",
+            ],
+            "after": [
+                "o",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "f",
+            ],
+            "commands": [
+                "metaGo.gotoSmart",
+            ]
+        },
+        {
+            "before": [
+                "m",
+            ],
+            "after": [
+                "<C-d>",
+            ]
+        },
+        {
+            "before": [
+                "q",
+            ],
+            "after": [
+                "<C-u>",
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        {
+            "before": [
+                "R",
+            ],
+            "after": [
+                "\"",
+                "0",
+                "P"
+            ]
+        },
+        {
+            "before": [
+                "8",
+            ],
+            "after": [
+                "z",
+                "t"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "f",
+            ],
+            "commands": [
+                "editor.action.formatSelection.multiple",
+            ]
+        },
+    ],
+    "editor.lineNumbers": "relative",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.editor.enablePreview": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.fontSize": 18,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.rendererType": "dom",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "rest-client.previewResponseInUntitledDocument": true,
+    "theme-timer.themes": [
+        {
+            "theme": "Visual Studio Light",
+            "startTime": "7:00:00",
+            "endTime": "16:00:00"
+        },
+        {
+            "theme": "Visual Studio Dark",
+            "startTime": "16:00:00",
+            "endTime": "7:00:00"
+        }
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "gitlens.views.search.files.layout": "tree",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.languageServer": "Microsoft",
+    "code-runner.defaultLanguage": "javascript",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.quickSuggestionsDelay": 1,
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "bookmarks.navigateThroughAllFiles": false,
+    "bookmarks.sideBar.expanded": true,
+    "liveshare.featureSet": "insiders",
+    "npm.enableRunFromFolder": true,
+    "npm.scriptExplorerAction": "run",
+    "npm.runSilent": true,
+    "terminal.integrated.fontFamily": "Cascadia Code PL",
+    "emmet.showExpandedAbbreviation": "always",
+    "files.autoSave": "onFocusChange",
+    "mdb.confirmRunAll": false,
+    "metaGo.decoration.backgroundOpacity": "1",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.editor.labelFormat": "short",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultLocation": "editor",
+    "extensions.autoUpdate": false,
+    "prettier.trailingComma": "none",
+    "editor.guides.bracketPairs": true,
+    "jest.autoRun": {
+        "watch": true,
+        "onSave":"test-only"
+    },
+    "jest.testExplorer": {
+        "enabled": true,
+        "showInlineError": true
+    },
+    "jest.disabledWorkspaceFolders": ["api", "client", "util", "design"],
+    // "mochaExplorer.files": "tests/**/*.ts",
+    // "mochaExplorer.require": "ts-node/register",
+    // "mochaExplorer.watch": "tests/**/*.ts",
+    "mochaExplorer.files": "dist/tests/**/*.js",
+    "mochaExplorer.require": "source-map-support/register",
+    "mochaExplorer.watch": "dist/**/*.js",
 }

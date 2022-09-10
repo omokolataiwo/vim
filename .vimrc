@@ -112,4 +112,3 @@ if has('nvim')
   tnoremap <Esc> <C-\><C-n>
   tnoremap jj <C-\><C-n>
 endif
-
