@@ -1,7 +1,4 @@
-" Plugins will be downloaded under the specified directory.
-call plug#begin('~/.vim/plugged')
-
-" Declare the list of plugins.
+call plug#begin()
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
@@ -30,6 +27,17 @@ Plug 'thosakwe/vim-flutter'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+if has("autocmd")
+  au VimEnter,InsertLeave * silent execute '!echo -ne "\e[3 q"'
+  au InsertEnter,InsertChange *
+    \ if v:insertmode == 'i' |
+    \   silent execute '!echo -ne "\e[6 q"' |
+    \ elseif v:insertmode == 'r' |
+    \   silent execute '!echo -ne "\e[4 q"' | 
+    \ endif
+  au VimLeave * silent execute '!echo -ne "\e[ q"'
+endif
+
 :set hidden
 :filetype plugin on
 :set shiftwidth=2
@@ -43,6 +51,7 @@ call plug#end()
 :set number
 " :set autochdir
 
+let NERDTreeQuitOnOpen=1
 let g:autopep8_disable_show_diff=1
 let g:autopep8_on_save = 1
 let g:wintabs_display='statusline'
@@ -50,7 +59,7 @@ let g:wintabs_display='statusline'
 let g:SuperTabCrMapping = 1
 let g:ale_fixers = ['eslint','autopep8', 'yapf']
 
-" let mapleader = ","
+let mapleader = ","
 let $FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 
 :nnoremap <Leader>c :let @+=expand('%:p')<CR>
@@ -64,11 +73,13 @@ nnoremap <leader>fD :FlutterVisualDebug<cr>
 " noremap m 7j
 
 noremap ; :
-noremap q ;
-noremap 8 7k
+noremap 8 ;
+noremap q 7k
+noremap 1 @:
+noremap m 7j
 noremap [ <C-W>W
 noremap <Tab> :WintabsNext<CR>
-noremap <Space> :WintabsPrevious<CR>
+noremap <Backspace> :WintabsPrevious<CR>
 noremap <Leader>d :WintabsClose<CR> 
 noremap <Leader>t :NERDTreeToggle<CR>
 noremap <Leader>f :Files<CR>
@@ -80,8 +91,10 @@ nnoremap 3 za
 onoremap 3 <C-C>za
 vnoremap 3 zf
 inoremap jj <Esc>
+inoremap kk <Esc>
 
 map <Leader> <Plug>(easymotion-prefix)
+map f <Plug>(easymotion-bd-f)
 
 command! E Explore
 cnoreabbrev t  ALEToggle
